@@ -1,7 +1,7 @@
 import json
 import glob
 
-results_name = glob.glob('/tmp/workspace/*.json')
+results_name = glob.glob('/tmp/workspace/logs/*.json')
 results = open(results_name[0], "rt")
 res_obj = json.loads(results.read())
 passed = []
