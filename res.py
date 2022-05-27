@@ -14,6 +14,7 @@ for test in res_obj["testCases"].keys():
         passed.append(test)
     else:
         failed.append(res_obj["testCases"][test]["name"])
+
 failed_tests = ", ".join(failed)
 
 with open(env_file, "a") as myfile:
