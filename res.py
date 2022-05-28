@@ -2,7 +2,7 @@ import json
 import glob
 import os
 
-env_file = os.path.getenv('GITHUB_ENV')
+env_file = os.getenv('GITHUB_ENV')
 results_name = glob.glob('/tmp/workspace/logs/*.json')
 results = open(results_name[0], "rt")
 res_obj = json.loads(results.read())
