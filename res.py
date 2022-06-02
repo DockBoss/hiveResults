@@ -18,5 +18,6 @@ for test in res_obj["testCases"].keys():
 failed_tests = ", ".join(failed)
 
 with open(env_file, "a") as myfile:
+    myfile.write("NUM_PASSED="+ str(len(passed)))
     myfile.write("NUM_FAILED="+ str(len(failed)))
     myfile.write("TESTS_FAILED=" + failed_tests)
